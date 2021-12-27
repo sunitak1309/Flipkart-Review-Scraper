@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #7d96b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 300px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 800;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #6840a1, #2c0069);
+}
+
+.sub-container {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sub-container .sub-title {
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 30px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 5px 10px #e1e5ee;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+thead {
+    box-shadow: 0 5px 10px #e1e5ee;
+}
+
+th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+    background-color: #2c0069;
+    border: 1px solid #dddddd;
+    color: #ffffff;
+}
+
+td {
+    padding: 1rem 1rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #2962ff;
+}
+
+tbody tr:hover {
+    background-color: #efedf0;
+    transform: scale(1.01);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #2c0069;
+}
+
+.positive {
+    border-radius: 0.2rem;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    background-color: #c8e6c9;
+    color: #388e3c;
+}
+
+.neutral {
+    border-radius: 0.2rem;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    background-color: #fff0c2;
+    color: #a68b00;
+}
+
+.negative {
+    border-radius: 0.2rem;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    background-color: #ffcdd2;
+    color: #c62828;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reviewPage.css') }}">
+</head>
+<body>
+
+    <div class="content">
+
+        <div class="container">
+            <div class="title">REVIEWS</div>
+        </div>
+
+        <div class="outer-wrapper">
+            <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="review-head">Summary</th>
+                        <th class="review-text">Review</th>
+                        <th>Rating</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Upvotes</th>
+                        <th>Downvotes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for review in reviews %}
+                    <tr class="{{review['sentiment']}}">
+                        <td class="review-head">{{review['summary']}}</td>
+                        <td class="review-text">{{review['review']}}</td>
+                        <td>{{review['rating']}} </td>
+                        <td>{{review['location']}}</td>
+                        <td>{{review['date']}}</td>
+                        <td>{{review['upvotes']}}</td>
+                        <td>{{review['downvotes']}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
